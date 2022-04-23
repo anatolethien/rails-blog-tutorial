@@ -1,5 +1,9 @@
-<nav>
-  <strong><%= link_to "Brand", root_path %></strong>
+<nav class="container-fluid">
+  <ul>
+    <li>
+      <strong><%= link_to "Brand", root_path %></strong>
+    </li>
+  </ul>
   <ul>
     <li><%= link_to "Post", root_path %></li>
     <li><%= link_to "New", new_article_path, role: "button" %></li>

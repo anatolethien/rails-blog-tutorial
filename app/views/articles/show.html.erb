@@ -1,6 +1,14 @@
-<h1><%= @article.title %></h1>
+<article>
+    <h1><%= @article.title %></h1>
+    <p><%= @article.body %></p>
+    <footer>
+        <%= link_to "Edit", edit_article_path, role: "button" %>
+        <%= link_to "Delete", article_path, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, role: "button" %>
+    </footer>
+</article>
 
-<p><%= @article.body %></p>
+<h2>Comments</h2>
+<%= render @article.comments %>
 
-<%= link_to "Edit", edit_article_path, role: "button" %>
-<%= link_to "Destroy", article_path, role: "button", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
