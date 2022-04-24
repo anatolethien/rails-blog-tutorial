@@ -1,24 +1,5 @@
-# README
+# rails-blog-tutorial
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application was made following the official [Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) tutorial.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The style is using the [Pico.css](https://picocss.com/) framework.
